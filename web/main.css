@@ -1,0 +1,194 @@
+/* SCAFFOLD */
+
+@import 'https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700';
+
+html, body {
+	margin: 0;
+	padding: 0;
+	font-size: 18px;
+	font-family: 'Playfair Display', serif;
+	line-height: 1.6;
+	color: #333;
+}
+
+h1, h2, h3, h4, h5 {
+	line-height: 1.2;
+	font-weight: 300;
+}
+
+section {
+	margin: 30px 0;
+}
+
+hr {
+	background: url("images/divider.svg") no-repeat top center;
+	height: 30px;
+	border: none;
+}
+
+.map {
+	width: 100%;
+	height: 400px;
+	background: none;
+	overflow: hidden;
+}
+
+.container {
+	margin: 0 auto;
+	padding: 0 10px;
+	max-width: 800px;
+}
+
+/* HEADER */
+
+.header {
+	height: 400px;
+	background: url("images/header_cover.jpg") center bottom;
+	background-size: cover;
+}
+
+.logo {
+	float: left;
+	margin: 40px 0 0 40px;
+	height: 30px;
+}
+
+.nav {
+	float: right;
+	margin: 40px 40px 0 0;
+}
+
+.nav a {
+	display: inline-block;
+	margin-left: 30px;
+	color: #333;
+	font-size: 16px;
+	font-weight: 700;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+
+.nav a:hover {
+	color: #000;
+}
+
+/* MAIN */
+
+.main {
+}
+
+
+.kicker {
+	margin: 20px 180px;
+	text-align: right;
+}
+
+.kicker p {
+	margin: 0;
+	font-size: 36px;
+	font-weight: 700;
+	text-align: left;
+}
+
+.cols {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	text-align: center;
+}
+
+.col2 {
+	flex-basis: 50%;
+}
+
+.col3 {
+	flex-basis: 33%;
+}
+
+.grid {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.grid .cell {
+	overflow: hidden;
+	position: relative;
+	flex-basis: 33%;
+}
+
+.grid .cell-2 {
+	flex-basis: 40%;
+}
+
+.grid .cell::after {
+	display: block;
+	padding-bottom: 100%;
+	content: '';
+}
+
+.grid .cell .content {
+	position: absolute;
+	padding: 10px;
+}
+
+.grid img {
+	overflow: hidden;
+	width: 100%;
+	transition: all .3s ease-in-out;
+}
+
+.grid img:hover {
+	transform: scale(1.05);
+}
+
+.info {
+	text-align: center;
+}
+
+.info strong {
+	font-size: 14px;
+	margin-right: 10px;
+}
+
+.products {
+}
+
+.products h2 {
+	margin-left: 80px;
+	margin-bottom: 10px;
+}
+
+.products p {
+	margin: 0;
+	padding: 0;
+}
+
+.products span {
+	display: inline-block;
+	width: 80px;
+}
+
+.button {
+	float: right;
+	margin-top: 5px;
+	padding: 3px 15px;
+	text-decoration: none;
+	border: 2px solid #333;
+	color: #333;
+	transition: .1s ease-in-out;
+}
+
+.button:hover {
+	background: #333;
+	color: #fff;
+}
+
+/* FOOTER */
+
+.footer p {
+	margin: 0;
+	padding: 20px 0;
+	font-size: 12px;
+	text-align: center;
+}
